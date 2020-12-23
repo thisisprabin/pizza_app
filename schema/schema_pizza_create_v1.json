@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "toppings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+          "type": "integer"
+      }
+    }
+  },
+  "required": [
+    "type",
+    "size",
+    "toppings"
+  ],
+  "additionalProperties": false
+}
